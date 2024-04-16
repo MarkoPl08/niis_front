@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.frontend.niis_front.controllers.AddReviewController">
+    <ListView fx:id="restaurantListView" prefHeight="200.0" />
+    <TextField fx:id="titleField" promptText="Review Title" />
+    <TextArea fx:id="textField" promptText="Review Text" prefHeight="100.0"/>
+    <HBox spacing="10">
+        <TextField fx:id="ratingField" promptText="Rating" />
+        <Button text="Add Review" onAction="#addReviewForSelectedRestaurant"/>
+    </HBox>
+</VBox>

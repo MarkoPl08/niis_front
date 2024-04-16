@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<TabPane fx:id="tabPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.frontend.niis_front.controllers.HelloController">
+  <tabs>
+    <Tab text="Add Restaurant">
+      <content>
+        <fx:include source="AddRestaurantView.fxml"/>
+      </content>
+    </Tab>
+    <Tab text="Update Restaurant">
+      <content>
+        <fx:include source="UpdateRestaurantView.fxml"/>
+      </content>
+    </Tab>
+    <Tab text="Delete Restaurant">
+      <content>
+        <fx:include source="DeleteRestaurantView.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Add Review">
+      <content>
+        <fx:include source="AddReviewView.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Update/Delete review">
+      <content>
+        <fx:include source="UpdateReviewView.fxml" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.frontend.niis_front.controllers.AddRestaurantController">
+    <TextField fx:id="nameField" promptText="Name" />
+    <TextField fx:id="priceField" promptText="ZipCode" />
+    <TextField fx:id="codeField" promptText="Location" />
+    <Button text="Add Restaurant" onAction="#onAddRestaurant"/>
+</VBox>
